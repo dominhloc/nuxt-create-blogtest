@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center justify-center">
         <div class="h-[300px] w-7/12 duration-300">
           <img
-            src="https://preview.redd.it/o96asqovzgi51.jpg?width=640&crop=smart&auto=webp&s=1d3becaddd3c64e0df9f5f6fa6c5cf7615a02b71"
+            src="https://cdn.tgdd.vn/Files/2020/09/20/1291843/chip-concept_800x450.jpg"
             class="w-full h-full rounded-lg"
           />
         </div>
