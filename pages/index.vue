@@ -39,7 +39,7 @@ useHead({
       content: "Home",
     },
   ],
-  titleTemplate: "Blog",
+  titleTemplate: "Blog Home",
 });
 const { data: blogs, refresh, error } = await useWpApi().getPosts();
 </script>

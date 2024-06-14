@@ -12,7 +12,7 @@
         v-for="category in categories"
         :key="(category as any).id"
         :to="`/categories/${(category as any).slug}`"
-        class="py-2 px-10 rounded-lg text-white bg-gray-600 hover:bg-gray-900 hover:scale-125 duration-100 text-xl uppercase my-1 mx-2"
+        class="py-2 px-10 my-1 mx-2 rounded-lg text-white bg-gray-600 hover:bg-gray-900 hover:scale-125 duration-100 text-xl uppercase"
       >
         <span class="font-semibold"># {{ (category as any).name }}</span>
       </NuxtLink>
