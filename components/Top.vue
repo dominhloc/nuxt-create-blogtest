@@ -6,7 +6,7 @@
         <div class="flex-1 flex items-center">
           <NuxtLink
             to="/"
-            class="text-yellow-600 text-2xl font-serif font-semibold hover:scale-110 duration-300 p-1"
+            class="text-yellow-600 text-2xl hover:border-b-2 border-white hover:border-yellow-600 font-serif font-semibold hover:scale-110 duration-300 p-1"
           >
             Bloggg
           </NuxtLink>

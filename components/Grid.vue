@@ -37,7 +37,7 @@ const props = defineProps({
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          class="ml-0 group-hover:ml-3 group-hover:font-semibold duration-200"
+          class="group-hover:ml-5 group-hover:font-semibold duration-200"
         >
           <path fill="black" d="M15.5 5H11l5 7l-5 7h4.5l5-7z" />
           <path fill="black" d="M8.5 5H4l5 7l-5 7h4.5l5-7z" />
