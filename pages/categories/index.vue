@@ -21,6 +21,7 @@
 </template>
 
 <script lang="ts" setup>
+//
 const { data: categories } = await useWpApi().getCatgories();
 
 useHead({
