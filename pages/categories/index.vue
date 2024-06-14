@@ -1,18 +1,18 @@
 <template>
-  <div class="flex justify-center items-center bg-black">
+  <div class="flex justify-center items-center">
     <Header
       title="Categories"
       class="font-serif text-yellow-500 flex-1 justify-center items-center flex"
     >
     </Header>
   </div>
-  <div class="py-10 px-20 flex justify-center">
-    <div class="flex flex-col space-y-3 items-center">
+  <div class="py-16 flex justify-center">
+    <div class="grid sm:grid-cols-2">
       <NuxtLink
         v-for="category in categories"
         :key="(category as any).id"
         :to="`/categories/${(category as any).slug}`"
-        class="border py-1 px-4 rounded-lg text-white bg-slate-600 hover:bg-slate-900 hover:scale-125 duration-100 text-lg uppercase"
+        class="py-2 px-10 rounded-lg text-white bg-gray-600 hover:bg-gray-900 hover:scale-125 duration-100 text-xl uppercase my-1 mx-2"
       >
         <span class="font-semibold"># {{ (category as any).name }}</span>
       </NuxtLink>

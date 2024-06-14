@@ -1,23 +1,21 @@
 <template>
-  <div class="">
-    <Header
-      :title="`Archive: ${category.name}`"
-      class="font-serif text-yellow-500 flex flex-row justify-center items-center"
-    ></Header>
-    <section class="flex justify-center p-10 bg-slate-200 h-screen">
-      <div class="max-w-7xl">
-        <div class="space-y-7 w-80 gap-10">
-          <Grid
-            v-for="post in posts"
-            :key="post?.id"
-            :title="post.title.rendered"
-            :image="post._embedded['wp:featuredmedia'][0]?.source_url"
-            :slug="post.slug"
-          ></Grid>
-        </div>
+  <Header
+    :title="`Archive: ${category.name}`"
+    class="font-serif text-yellow-500 flex flex-row justify-center items-center"
+  ></Header>
+  <section class="blogs flex-col flex items-center bg-slate-200 p-9 h-screen">
+    <div class="max-w-7xl">
+      <div class="space-y-7 w-80 gap-10">
+        <Grid
+          v-for="post in posts"
+          :key="post.id"
+          :title="post.title.rendered"
+          :image="post._embedded['wp:featuredmedia'][0]?.source_url"
+          :slug="post.slug"
+        ></Grid>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts" setup>

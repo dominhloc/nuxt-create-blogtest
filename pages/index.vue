@@ -5,7 +5,7 @@
         <div class="h-[300px] w-7/12 duration-300">
           <img
             src="https://preview.redd.it/o96asqovzgi51.jpg?width=640&crop=smart&auto=webp&s=1d3becaddd3c64e0df9f5f6fa6c5cf7615a02b71"
-            class="w-full h-full"
+            class="w-full h-full rounded-lg"
           />
         </div>
       </div>
@@ -13,7 +13,7 @@
 
     <!-- Blog Section Starts -->
     <section
-      class="blogs flex-col flex justify-center items-center bg-slate-200 p-9"
+      class="blogs flex-col flex justify-center items-center bg-slate-100 p-9"
     >
       <div class="max-w-7xl">
         <div class="grid sm:grid-cols-4 gap-10">

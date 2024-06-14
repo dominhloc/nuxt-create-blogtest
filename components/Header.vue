@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="p-6 bg-slate-950">
+  <section class="p-3 bg-slate-950">
     <div v-if="props.title" class="text-4xl font-semibold">
       {{ props.title }}
     </div>

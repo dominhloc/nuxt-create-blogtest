@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center bg-slate-200">
+  <div class="flex justify-center items-center border-t-4">
     <section class="py-10 max-w-7xl">
       <div v-if="post" class="p-10">
         <!-- Blog Title  -->
@@ -7,16 +7,16 @@
           {{ post.title.rendered }}
         </h1>
         <!-- Blog Meta  -->
-        <div class="flex mb-10 justify-center font-semibold gap-5">
+        <div class="flex items-center mb-14 justify-center font-semibold gap-5">
           <span
             >Written by:
-            <span class="text-blue-500">{{
+            <span class="text-blue-600">{{
               post._embedded["author"][0]?.name
             }}</span></span
           >
           <span
             >Published on:
-            <span class="text-red-500">{{ post.date }}</span></span
+            <span class="text-blue-600">{{ post.date }}</span></span
           >
         </div>
         <!-- Blog Image  -->

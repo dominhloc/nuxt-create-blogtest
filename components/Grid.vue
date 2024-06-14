@@ -15,21 +15,21 @@ const props = defineProps({
       <img
         :src="image"
         :alt="title"
-        class="absolute w-full h-full group-hover:scale-90 duration-150 object-cover rounded-lg border border-white group-hover:border-slate-500"
+        class="absolute w-full h-full group-hover:scale-90 duration-150 object-cover rounded-lg border group-hover:border-slate-500"
       />
     </div>
-    <div class="p-5 space-y-4 flex-col">
+    <div class="p-4 flex-col">
       <h3 class="text-xl group-hover:text-blue-600 font-semibold">
         {{ title }}
       </h3>
     </div>
     <NuxtLink
       v-if="slug"
-      class="inline-flex flex-1 justify-center items-end"
+      class="inline-flex flex-1 justify-start items-end pl-4"
       :to="`/${slug}`"
     >
       <div
-        class="flex group-hover:border-b-2 border-b-2 border-white group-hover:border-blue-600 group-hover:text-blue-600 group-hover:font-semibold mb-2"
+        class="flex group-hover:border-b-2 border-b-2 border-white group-hover:border-blue-600 group-hover:text-blue-600 group-hover:font-semibold mb-3"
       >
         Read more
         <svg
