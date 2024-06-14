@@ -1,20 +1,18 @@
 <template>
   <main>
     <Header>
-      <div class="flex flex-col items-center justify-center">
-        <div class="h-[300px] w-7/12 duration-300">
+      <div class="flex flex-col items-center">
+        <div class="h-[300px] w-8/12">
           <img
             src="https://cdn.tgdd.vn/Files/2020/09/20/1291843/chip-concept_800x450.jpg"
-            class="w-full h-full rounded-lg"
+            class="w-full h-full"
           />
         </div>
       </div>
     </Header>
 
     <!-- Blog Section Starts -->
-    <section
-      class="blogs flex-col flex justify-center items-center bg-slate-100 p-9"
-    >
+    <section class="flex justify-center bg-slate-100 p-9">
       <div class="max-w-7xl">
         <div class="grid sm:grid-cols-4 gap-10">
           <Grid

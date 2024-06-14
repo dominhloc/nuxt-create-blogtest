@@ -2,7 +2,7 @@
   <div class="flex justify-center items-center">
     <Header
       title="Categories"
-      class="font-serif text-yellow-500 flex-1 justify-center items-center flex"
+      class="font-serif text-yellow-500 flex-1 flex justify-center"
     >
     </Header>
   </div>

@@ -3,9 +3,9 @@
     :title="`Archive: ${category.name}`"
     class="font-serif text-yellow-500 flex flex-row justify-center items-center"
   ></Header>
-  <section class="blogs flex-col flex items-center bg-slate-200 p-9 h-screen">
+  <section class="blogs flex-col flex items-center bg-slate-200 p-5 h-screen">
     <div class="max-w-7xl">
-      <div class="space-y-7 w-80 gap-10">
+      <div class="space-y-7 gap-10">
         <Grid
           v-for="post in posts"
           :key="post.id"
@@ -20,12 +20,14 @@
 
 <script lang="ts" setup>
 const params = useRoute().params;
+//console.log("🚀 ~ params:", params);
 
 const { data: categories, error } = await useWpApi().getCatgory(
   params.slug as string
 );
 
 const category = categories.value[0];
+// console.log("🚀 ~ category:", category);
 
 const { data: posts, error: postsError } = await useWpApi().getPosts(
   category.id

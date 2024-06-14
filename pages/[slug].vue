@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-center items-center border-t-4">
+  <div class="flex justify-center border-t-4">
     <section class="py-10 max-w-7xl">
       <div v-if="post" class="p-10">
         <!-- Blog Title  -->
-        <h1 class="font-bold text-2xl sm:text-4xl text-center mb-5 uppercase">
+        <h1 class="font-bold text-4xl text-center mb-5 uppercase">
           {{ post.title.rendered }}
         </h1>
         <!-- Blog Meta  -->
@@ -21,12 +21,12 @@
         </div>
         <!-- Blog Image  -->
         <div
-          class="h-[250px] sm:h-[500px] w-full rounded-lg shadow-xl relative overflow-hidden mb-12"
+          class="sm:h-[500px] w-full rounded-lg shadow-xl relative overflow-hidden mb-12"
         >
           <img
             :src="post._embedded['wp:featuredmedia'][0]?.source_url"
             :alt="post.title.rendered"
-            class="absolute w-full h-full object-cover"
+            class="w-full h-full object-cover"
           />
         </div>
         <div>
