@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-center items-center">
+  <div class="flex justify-center items-center bg-slate-200 ">
     <section class="py-10 max-w-7xl">
       <div v-if="post" class="p-10">
         <!-- Blog Title  -->
-        <h1 class="font-bold text-2xl sm:text-4xl text-center mb-5">
+        <h1 class="font-bold text-2xl sm:text-4xl text-center mb-5 uppercase">
           {{ post.title.rendered }}
         </h1>
         <!-- Blog Meta  -->

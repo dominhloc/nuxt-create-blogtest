@@ -25,7 +25,7 @@ const props = defineProps({
 
       <NuxtLink
         v-if="slug"
-        class="border-b-4 group-hover:border-blue-500 group-hover:text-blue-500 group-hover:font-semibold inline-flex items-center"
+        class="group-hover:border-b-2 border-b-2 border-white group-hover:border-blue-600 group-hover:text-blue-600 group-hover:font-semibold inline-flex items-center"
         :to="`/${slug}`"
       >
         Read more

@@ -6,9 +6,9 @@
         <div class="flex-auto flex items-center">
           <NuxtLink
             to="/"
-            class="flex justify-start text-yellow-600 items-center text-3xl font-serif font-semibold hover:scale-125 duration-300 p-1 rounded-md"
+            class="flex justify-start text-yellow-600 items-center text-3xl font-serif font-semibold hover:scale-110 duration-300 p-1 rounded-md"
           >
-            Bloggggggg
+            Bloggg
           </NuxtLink>
         </div>
         <div class="flex space-x-5 items-center mr-4">
