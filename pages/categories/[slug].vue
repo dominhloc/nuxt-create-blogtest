@@ -4,7 +4,7 @@
       :title="`Archive: ${category.name}`"
       class="font-serif text-yellow-500 flex flex-row justify-center items-center"
     ></Header>
-    <section class="flex justify-center p-10 bg-slate-200">
+    <section class="flex justify-center p-10 bg-slate-200 h-screen">
       <div class="max-w-7xl">
         <div class="space-y-7 w-80 gap-10">
           <Grid

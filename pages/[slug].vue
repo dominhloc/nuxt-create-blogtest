@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center bg-slate-200 ">
+  <div class="flex justify-center items-center bg-slate-200">
     <section class="py-10 max-w-7xl">
       <div v-if="post" class="p-10">
         <!-- Blog Title  -->

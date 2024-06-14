@@ -8,10 +8,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="p-6 bg-black">
-    <div class="">
-      <h1 v-if="props.title" class="text-4xl font-bold">{{ props.title }}</h1>
-      <slot />
+  <section class="p-6 bg-slate-950">
+    <div v-if="props.title" class="text-4xl font-semibold">
+      {{ props.title }}
     </div>
+    <slot />
   </section>
 </template>

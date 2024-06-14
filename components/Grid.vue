@@ -15,7 +15,7 @@ const props = defineProps({
       <img
         :src="image"
         :alt="title"
-        class="absolute w-full h-full group-hover:scale-110 duration-300 object-cover"
+        class="absolute w-full h-full group-hover:scale-90 duration-150 object-cover"
       />
     </div>
     <div class="p-5 space-y-4 flex-col">
@@ -31,15 +31,13 @@ const props = defineProps({
         Read more
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          class="ml-1 group-hover:ml-4 group-hover:font-semibold duration-200"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
+          class="ml-0 group-hover:ml-3 group-hover:font-semibold duration-200"
         >
-          <path
-            fill="black"
-            d="M14 9h7c.55 0 1-.45 1-1s-.45-1-1-1h-7c-.55 0-1 .45-1 1s.45 1 1 1m7 6h-7c-.55 0-1 .45-1 1s.45 1 1 1h7c.55 0 1-.45 1-1s-.45-1-1-1m0-4h-4c-.55 0-1 .45-1 1s.45 1 1 1h4c.55 0 1-.45 1-1s-.45-1-1-1M8.85 7.85a.5.5 0 0 0-.85.36V11H3c-.55 0-1 .45-1 1s.45 1 1 1h5v2.79c0 .45.54.67.85.35l3.79-3.79c.2-.2.2-.51 0-.71z"
-          />
+          <path fill="black" d="M15.5 5H11l5 7l-5 7h4.5l5-7z" />
+          <path fill="black" d="M8.5 5H4l5 7l-5 7h4.5l5-7z" />
         </svg>
       </NuxtLink>
     </div>

@@ -2,8 +2,11 @@
   <main>
     <Header>
       <div class="flex flex-col items-center justify-center">
-        <div class="h-[300px] w-3/6 hover:scale-110 duration-300">
-          <img src="" class="w-full h-full" />
+        <div class="h-[300px] w-7/12 duration-300">
+          <img
+            src="https://preview.redd.it/o96asqovzgi51.jpg?width=640&crop=smart&auto=webp&s=1d3becaddd3c64e0df9f5f6fa6c5cf7615a02b71"
+            class="w-full h-full"
+          />
         </div>
       </div>
     </Header>
