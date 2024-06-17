@@ -5,6 +5,4 @@
   </div>
 </template>
 
-<script setup>
-// chuyển thành dạng script setup
-</script>
+<script setup></script>
