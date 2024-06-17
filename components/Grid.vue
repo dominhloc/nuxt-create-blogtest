@@ -7,7 +7,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="shadow-xl group flex flex-col bg-white rounded-lg">
+  <NuxtLink
+    class="shadow-xl group flex flex-col bg-white rounded-lg"
+    v-if="slug"
+    :to="`/${slug}`"
+  >
     <div
       v-if="image"
       class="grid__image group h-[150px] w-full relative overflow-hidden"
@@ -15,7 +19,7 @@ const props = defineProps({
       <img
         :src="image"
         :alt="title"
-        class="absolute w-full h-full group-hover:scale-90 duration-150 object-cover rounded-lg border group-hover:border-slate-500"
+        class="absolute w-full h-full group group-hover:scale-90 duration-150 object-cover rounded-lg border group-hover:border-slate-500"
       />
     </div>
     <div class="p-4 flex-col">
@@ -23,7 +27,7 @@ const props = defineProps({
         {{ title }}
       </h3>
     </div>
-    <NuxtLink
+    <div
       v-if="slug"
       class="inline-flex flex-1 justify-start items-end pl-4"
       :to="`/${slug}`"
@@ -43,6 +47,6 @@ const props = defineProps({
           <path fill="black" d="M8.5 5H4l5 7l-5 7h4.5l5-7z" />
         </svg>
       </div>
-    </NuxtLink>
-  </div>
+    </div>
+  </NuxtLink>
 </template>

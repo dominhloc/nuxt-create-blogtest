@@ -19,13 +19,11 @@
   </section>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const params = useRoute().params;
 //console.log("🚀 ~ params:", params);
 
-const { data: categories, error } = await useWpApi().getCatgory(
-  params.slug as string
-);
+const { data: categories, error } = await useWpApi().getCatgory(params.slug);
 
 const category = categories.value[0];
 // console.log("🚀 ~ category:", category);
