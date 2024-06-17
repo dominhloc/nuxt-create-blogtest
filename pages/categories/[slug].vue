@@ -3,6 +3,7 @@
     :title="`Archive: ${category.name}`"
     class="font-serif text-yellow-500 flex flex-row justify-center items-center"
   ></Header>
+
   <section class="blogs flex-col flex items-center bg-slate-200 p-5 h-screen">
     <div class="max-w-7xl">
       <div class="space-y-7 gap-10">

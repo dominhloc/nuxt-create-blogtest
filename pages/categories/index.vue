@@ -10,17 +10,17 @@
     <div class="grid sm:grid-cols-2">
       <NuxtLink
         v-for="category in categories"
-        :key="(category as any).id"
-        :to="`/categories/${(category as any).slug}`"
+        :key="category.id"
+        :to="`/categories/${category.slug}`"
         class="py-2 px-10 my-1 mx-2 rounded-lg text-white bg-gray-600 hover:bg-gray-900 hover:scale-125 duration-100 text-xl uppercase"
       >
-        <span class="font-semibold"># {{ (category as any).name }}</span>
+        <span class="font-semibold"># {{ category.name }}</span>
       </NuxtLink>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 //
 const { data: categories } = await useWpApi().getCatgories();
 

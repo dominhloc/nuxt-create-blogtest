@@ -8,16 +8,16 @@
         </h1>
         <!-- Blog Meta  -->
         <div class="flex items-center mb-14 justify-center font-semibold gap-5">
-          <span
-            >Written by:
+          <span>
+            Written by:
             <span class="text-blue-600">{{
               post._embedded["author"][0]?.name
-            }}</span></span
-          >
-          <span
-            >Published on:
-            <span class="text-blue-600">{{ post.date }}</span></span
-          >
+            }}</span>
+          </span>
+          <span>
+            Published on:
+            <span class="text-blue-600">{{ post.date }}</span>
+          </span>
         </div>
         <!-- Blog Image  -->
         <div
@@ -40,11 +40,13 @@
     </section>
   </div>
 </template>
-<script lang="ts" setup>
-import { onMounted } from "vue";
+
+<script setup>
+
+import useWpApi from "~/composables/useWpApi";
 
 const params = useRoute().params;
-const { data: posts } = await useWpApi().getPost(params.slug as string);
+const { data: posts } = await useWpApi().getPost(params.slug);
 const post = posts.value?.[0];
 
 useHead({
@@ -52,7 +54,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content: `${post?.excerpt.rendered}`,
+      content: post?.excerpt.rendered || "",
     },
   ],
 });

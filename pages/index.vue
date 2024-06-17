@@ -28,7 +28,7 @@
     <!-- Blog Section Ends  -->
   </main>
 </template>
-<script lang="ts" setup>
+<script setup>
 import useWpApi from "~~/composables/useWpApi";
 
 useHead({

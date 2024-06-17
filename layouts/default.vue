@@ -4,5 +4,7 @@
     <slot />
   </div>
 </template>
-<script lang="ts" setup></script>
-<style></style>
+
+<script setup>
+// chuyển thành dạng script setup
+</script>
