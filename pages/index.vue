@@ -12,9 +12,9 @@
     </Header>
 
     <!-- Blog Section Starts -->
-    <section class="flex justify-center bg-slate-100 p-9">
+    <section class="flex flex-wrap justify-center bg-slate-100 p-9">
       <div class="max-w-7xl">
-        <div class="grid sm:grid-cols-4 gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <Grid
             v-for="blog in blogs"
             :key="blog.id"
@@ -28,6 +28,7 @@
     <!-- Blog Section Ends  -->
   </main>
 </template>
+
 <script setup>
 import useWpApi from "~~/composables/useWpApi";
 
